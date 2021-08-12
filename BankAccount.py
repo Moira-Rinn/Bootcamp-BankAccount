@@ -18,9 +18,6 @@ class BankAccount:
     def display_acct_balance(self):
         return f"Balance: ${round(self.balance, 2)}\n"
 
-    def display_acct_info(self):
-        print(f"")
-
     def yield_interest(self):
         if self.balance > 0:
             self.balance += self.balance * self.int_rate
